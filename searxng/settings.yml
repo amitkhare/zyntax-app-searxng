@@ -1,0 +1,22 @@
+use_default_settings: true
+
+search:
+  # Enable the JSON API (and keep HTML) so AI agents can query this instance.
+  formats:
+    - html
+    - json
+
+server:
+  secret_key: "da3dbc06e5ec9393e0d2946248fb7ac668949a935befe930e2a85cd4e52ca1b9"
+  bind_address: "0.0.0.0"
+  port: 8888
+  limiter: false
+  public_instance: false
+  # No HTTP Basic Auth for now: agents connect directly.
+
+general:
+  instance_name: "SearXNG"
+  debug: false
+
+ui:
+  default_theme: simple
